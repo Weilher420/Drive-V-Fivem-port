@@ -1,0 +1,375 @@
+12.00
+
+# MATERIAL INFORMATION
+
+##########################################################
+## IMPORTANT                                            ##
+##########################################################
+## THIS DATA FILE IS FORMATTED WITH TABS OF SIZE 4		##
+## AND SHOULD BE VIEWED IN VISUAL STUDIO OR NOTEPAD++	##
+##########################################################
+
+# MATERIAL				name of the material
+# FILTER				filter name of the material - used by the tools to simplify material selection
+# FX GROUP				the fx group that this material maps to 	
+
+# VFX_DISTURBANCE_TYPE	the type of disturbance effect that is played when fast moving things move quickly above this material (e.g. downwashes, projectiles etc)
+# REACT_WEAPON_TYPE		the type of weapon that is used to damage a ped colliding with this material
+
+# RAGE_FRICTION		
+# RAGE_ELASTICITY
+
+# DENSITY				physical density of the material
+# TYRE_GRIP				tyre grip - will override friction values for vehicle tyres on each material
+# WET_GRIP				wet multiplier on tyre grip
+
+# VIBRATION				pad vibration (0.0:none -> 1.0:lots)
+# SOFTNESS				how much you can sink into the matrial (used for second surface) (0.0:not -> 1.0:very)
+# NOISINESS				how loud the material is (used by the stealth code) (0.0:not -> 1.0:very)
+
+# FLAMMABILITY			flammability (0.0:not -> 1.0:very)	
+# BURN_TIME				burn time (time the material will burn for (in seconds))	
+# BURN_STR				burn strength (the strength of the flames (0.0 -> 1.0)	
+
+# FLAGS
+#  SEE_THRU				AI probes will pass through
+#  SHOOT_THRU			weapon probes will pass through
+#  SHOOT_THRU_FX		requests that a collision is reported on the shoot_thru poly so vfx/sfx can be played
+
+
+#																																																								FLAGS---------------->	
+# MATERIAL					FILTER				FX GROUP			VFX				RUMBLE PROFILE			REACT					RAGE_FRICTION			TYRE_GRIP		   					       			PENETRATION		SEE_THRU		POROUS	MATERIAL
+#																	DISTURBANCE								WEAPON							RAGE_ELASTICITY		  	WET_GRIP	TOP_SPEED_MULT	SOFTNESS		RESISTANCE		  SHOOT_THRU	  HEATS_TYRE	 
+#																	TYPE									TYPE									DENSITY		    		TYRE_DRAG					NOISINES					SHOOT_THRU_FX		
+#																																																									  NO_DECAL  	
+#																																																				
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+																														
+###############################																											
+# DEFAULT (000-000)																												
+																														
+DEFAULT						DEFAULT				GENERIC		    	DEFAULT			-						-						1.0		0.1		1750.0	1.00	-0.15	0.0		1.0			0.95	0.0 	1.0				0 0 0 0			0 0		DEFAULT				
+																			  												
+																			  												
+###############################																  													
+# HARD TERRAIN (001-017)																	  													
+																			  												
+CONCRETE					HARD_TERRAIN		CONCRETE	   		DEFAULT			-						-						1.0		0.3		7850.5	0.96 	-0.11  	0.002  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		CONCRETE		
+CONCRETE_POTHOLE			HARD_TERRAIN		CONCRETE	    	DEFAULT			CONCRETE_POTHOLE		-						0.8		0.4		4900.0	0.92 	-0.11  	0.008  	1.0 		0.95	0.0 	1.0				0 0 0 0			0 1		CONCRETE_POTHOLE	
+CONCRETE_DUSTY				HARD_TERRAIN		CONCRETE_DUSTY	    DEFAULT			-						-						0.6		0.3		7850.5	0.925 	-0.10  	0.004  	1.0 		0.95	0.0 	1.0				0 0 0 0			0 1		CONCRETE_DUSTY	
+TARMAC						HARD_TERRAIN		TARMAC		   		DEFAULT			-						-						1.0		0.4		6300.0	1.00 	-0.119 	0.0	  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		TARMAC			
+TARMAC_PAINTED				HARD_TERRAIN		TARMAC		    	DEFAULT			-						-						0.7		0.4		6300.0	0.91 	-0.11 	0.0	 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		TARMAC_PAINTED		
+TARMAC_POTHOLE				HARD_TERRAIN		TARMAC_BRITTLE	    DEFAULT			TARMAC_POTHOLE			-						0.7		0.4		4900.0	0.90 	-0.11  	0.008  	1.0 		0.95	0.0 	1.0				0 0 0 0			0 1		TARMAC_POTHOLE		
+RUMBLE_STRIP				HARD_TERRAIN		TARMAC		    	DEFAULT			RUMBLE_STRIP			-						1.0		0.3		6300.0	0.87 	-0.11  	0.054  	1.0 		0.95	0.0 	1.0				0 0 0 0			0 1		RUMBLE_STRIP		
+BREEZE_BLOCK				HARD_TERRAIN		CONCRETE	    	DIRT			-						-						1.0		0.3		7000.0	0.98 	-0.12	0.0		1.0			0.95	0.0		1.0				0 0 0 0			0 1		BREEZE_BLOCK		
+ROCK						HARD_TERRAIN		STONE		    	DIRT			ROCK					-						0.6		0.4		7000.0	0.73 	-0.11	0.016	1.0 		0.95	0.0		1.0				0 0 0 0			0 1		ROCK			
+ROCK_MOSSY					HARD_TERRAIN		STONE		    	DIRT			ROCK_MOSSY				-						0.5		0.3		7000.0	0.60 	-0.13	0.016	1.0 		0.95	0.0		1.0				0 0 0 0			0 1		ROCK_MOSSY		
+STONE						HARD_TERRAIN		STONE		    	DIRT			-						-						0.8		0.4		7000.0	0.91 	-0.11	0.018	1.0 		0.95	0.0		1.0				0 0 0 0			0 1		STONE			
+COBBLESTONE					HARD_TERRAIN		STONE		    	DEFAULT			COBBLESTONE				-						0.8		0.4		7000.0	0.90 	-0.13	0.024	1.0 		0.95	0.0		1.0				0 0 0 0			0 1		COBBLESTONE		
+BRICK						HARD_TERRAIN		BRICK		    	DEFAULT			-						-						0.8		0.4		7000.0	1.00 	-0.13	0.004	1.0			0.95	0.0		1.0				0 0 0 0			0 1		BRICK			
+MARBLE						HARD_TERRAIN		MARBLE		    	DEFAULT			-						-						0.7		0.5		8970.5	0.90 	-0.11	0.0		1.0			0.95	0.0		1.0				0 0 0 0			0 1		MARBLE			
+PAVING_SLAB 				HARD_TERRAIN		PAVING	 	    	DEFAULT			-						-						0.9		0.4		7000.0	0.97 	-0.12	0.000	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PAVING_SLABS 		
+SANDSTONE_SOLID				HARD_TERRAIN		SANDSTONE	    	DIRT			-						-						1.0		0.4		8130.5	0.95 	-0.12	0.010	1.0			0.95	0.0		1.0				0 0 0 0			0 1		SANDSTONE_SOLID		
+SANDSTONE_BRITTLE			HARD_TERRAIN		SANDSTONE_BRITTLE   DIRT			-						-						1.0		0.2		5075.0	0.93 	-0.12	0.012	1.0			0.95	0.0		1.0				0 0 0 0			0 1		SANDSTONE_BRITTLE	
+																			  												
+																			  												
+###############################																  													
+# LOOSE TERRAIN	(018-045)																	  													
+																		   	  																													
+SAND_LOOSE					LOOSE_TERRAIN		SAND_LOOSE	    	SAND			-						-						0.6		0.1 	5147.0	0.75	-0.05	0.100	0.97 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_LOOSE			
+SAND_COMPACT				LOOSE_TERRAIN		SAND_COMPACT	    SAND			-						-						0.7		0.1		5950.0	0.80   	-0.07	0.040	1.0 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_COMPACT			
+SAND_WET					LOOSE_TERRAIN		SAND_WET	    	SAND			-						-						0.6		0.2		6727.0	0.75   	-0.03	0.125	0.9 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_WET			
+SAND_TRACK					LOOSE_TERRAIN		SAND_COMPACT	    SAND			-						-						0.7		0.1 	5175.0	0.85  	-0.08	0.050	1.0 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_TRACK			
+SAND_UNDERWATER				LOOSE_TERRAIN		SAND_UNDERWATER		SAND			-						-						0.8		0.2		5775.0	0.72  	-0.01	0.090	0.6 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_UNDERWATER	
+SAND_DRY_DEEP				LOOSE_TERRAIN		SAND_DEEP	    	SAND			-						-						0.8		0.1 	5147.0	0.75	-0.06	0.120	0.9 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_DRY_DEEP	
+SAND_WET_DEEP 				LOOSE_TERRAIN		SAND_WET_DEEP	    SAND			-						-						0.8		0.1 	6727.0	0.75   	-0.01	0.136	0.8 		0.95	0.0 	0.0				0 0 0 0			1 0		SAND_WET_DEEP			
+
+ICE							LOOSE_TERRAIN		ICE		    		DEFAULT			-						-						0.1		0.3		3216.5	0.49  	-0.08	0.001	0.99		0.95	0.0 	1.0				0 0 0 0			0 0		ICE			
+ICE_TARMAC					HARD_TERRAIN		ICE		    		DEFAULT			-						-						0.4		0.3		3216.5	0.55  	-0.08	0.000	0.99		0.95	0.0 	1.0				0 0 0 0			0 0		ICE			
+SNOW_LOOSE					LOOSE_TERRAIN		SNOW_LOOSE	    	DEFAULT			-						-						0.4		0.1		560.0	0.63  	-0.05	0.011	0.90		0.95	0.0 	1.0				0 0 0 0			1 0		SNOW_LOOSE		
+SNOW_COMPACT				LOOSE_TERRAIN		SNOW_COMPACT	    DEFAULT			-						-						0.2		0.1		1683.5	0.63  	-0.05	0.000	0.99		0.95	0.0 	1.0				0 0 0 0			0 0		SNOW_COMPACT			
+SNOW_DEEP					LOOSE_TERRAIN		SNOW_LOOSE	    	DEFAULT			-						-						0.4		0.1		560.0	0.57  	-0.05	0.173	0.67		0.95	0.0 	1.0				0 0 0 0			1 0		SNOW_DEEP		
+SNOW_TARMAC					HARD_TERRAIN		SNOW_COMPACT    	DEFAULT			-						-						0.7		0.4		6300.0	0.80	-0.05	0.000	0.97		0.95	0.0 	1.0				0 0 0 0			0 1		SNOW_TARMAC			
+												  																																				
+GRAVEL_SMALL				LOOSE_TERRAIN		GRAVEL		    	DIRT			GRAVEL_SMALL			-						0.5		0.1		6727.0	0.80	-0.07	0.035	0.95		0.95	0.0 	1.0				0 0 0 0			0 0		GRAVEL_SMALL		
+GRAVEL_LARGE				LOOSE_TERRAIN		GRAVEL		    	DIRT			GRAVEL_LARGE			-						0.6		0.1		5887.0	0.77	-0.07	0.050	0.95		0.95	0.0 	1.0				0 0 0 0			0 0		GRAVEL_LARGE		
+GRAVEL_DEEP 				LOOSE_TERRAIN		GRAVEL_DEEP	    	DIRT			GRAVEL_SMALL			-						0.5		0.1		6727.0	0.76	-0.07	0.045	0.90		0.95	0.0 	1.0				0 0 0 0			0 0		GRAVEL_DEEP		
+GRAVEL_TRAIN_TRACK			LOOSE_TERRAIN		CONCRETE_DUSTY    	DIRT			GRAVEL_SMALL			-						0.5		0.1		6727.0	0.75	-0.07	0.055	0.95		0.95	0.0 	1.0				0 0 0 0			0 0		GRAVEL_TRAIN_TRACK		
+DIRT_TRACK					LOOSE_TERRAIN		DIRT_DRY	    	DIRT			DIRT_TRACK				-						0.8		0.3		4550.0	0.84	-0.05	0.128	0.99		0.95	0.0		1.0				0 0 0 0			1 1		DIRT_TRACK		
+MUD_HARD					LOOSE_TERRAIN		DIRT_DRY	    	DIRT			-						-						0.7		0.3		5327.0	0.89	-0.09	0.106	0.99		0.95	0.0		1.0				0 0 0 0			1 0		MUD_HARD		
+MUD_POTHOLE					LOOSE_TERRAIN		MUD_SOFT	    	DIRT			MUD_POTHOLE				-						0.6		0.2		4200.0	0.83	-0.09	0.150	0.95		0.95	0.0		1.0				0 0 0 0			1 0		MUD_POTHOLE		
+MUD_SOFT					LOOSE_TERRAIN		MUD_SOFT	    	DIRT			-						-						0.7		0.2		6055.0	0.70	-0.09	0.195	0.97		0.95	0.0 	1.0				0 0 0 0			1 0		MUD_SOFT		
+MUD_UNDERWATER				LOOSE_TERRAIN		MUD_UNDERWATER    	DIRT			-						-						0.7		0.2		6055.0	0.59	-0.01	0.235	0.54		0.95	0.0 	1.0				0 0 0 0			0 0		MUD_UNDERWATER		
+MUD_DEEP 					LOOSE_TERRAIN		MUD_DEEP	    	DIRT			-						-						0.7		0.2		6055.0	0.64	-0.00	0.265	0.75		0.95	0.0 	1.0				0 0 0 0			1 0		MUD_DEEP		
+MARSH						LOOSE_TERRAIN		MUD_DEEP	    	DIRT			-						-						0.7		0.2		6055.0	0.77	-0.04	0.220	0.89		0.95	0.0 	1.0				0 0 0 0			1 0		MARSH		
+MARSH_DEEP					LOOSE_TERRAIN		MUD_DEEP	    	DIRT			-						-						0.7		0.2		6055.0	0.65	-0.01	0.595	0.52		0.95	0.0 	1.0				0 0 0 0			1 0		MARSH_DEEP		
+SOIL						LOOSE_TERRAIN		MUD_SOFT	    	DIRT			-						-						0.7		0.2		5047.0	0.70	-0.08	0.105	0.95		0.95	0.0 	1.0				0 0 0 0			1 0		SOIL			
+CLAY_HARD					LOOSE_TERRAIN		CLAY		    	DIRT			CLAY_HARD				-						0.7		0.3		6111.0	0.75	-0.08	0.022	0.99		0.95	0.0 	1.0				0 0 0 0			0 1		CLAY_HARD			
+CLAY_SOFT					LOOSE_TERRAIN		CLAY		    	DIRT			-						-						0.7		0.2		3755.5	0.70	-0.07	0.050	0.89		0.85	0.0 	1.0				0 0 0 0			0 0		CLAY_SOFT			
+																			  												
+																			  												
+###############################																  													
+# VEGETATION (046-054)												  													
+																			  												
+GRASS_LONG					VEGETATION			GRASS		    	FOLIAGE			-						-						0.8		0.1		4900.0	0.88 	-0.11  	0.075  	0.95		0.95	0.0 	0.9				0 0 0 0			1 0		GRASS_LONG		
+GRASS						VEGETATION			GRASS		    	FOLIAGE			-						-						0.6		0.1		5600.0	0.87 	-0.11  	0.030 	0.97		0.95	0.0 	0.9				0 0 0 0			1 0		GRASS			
+GRASS_SHORT					VEGETATION			GRASS_SHORT	    	FOLIAGE			-						-						0.4		0.2		5950.0	0.84 	-0.12  	0.015 	0.99		0.98	0.0 	0.9				0 0 0 0			1 0		GRASS_SHORT		
+HAY							VEGETATION			HAY					FOLIAGE			-						-						0.4		0.2		5950.0	0.78 	-0.10  	0.050  	0.97		0.95	0.0 	1.0				0 0 0 0			1 0		HAY	
+BUSHES						VEGETATION			BUSHES		    	FOLIAGE			-						-						0.7		0.1		925.0	0.75 	-0.06  	0.010 	0.99		0.95	0.0 	1.0				0 0 0 0			0 0		BUSHES			
+TWIGS						VEGETATION			TREE_BARK	    	FOLIAGE			-						-						0.7		0.1		700.0	0.80 	-0.01  	0.035 	0.98		0.95	0.0		1.0				0 0 0 0			0 0		TWIGS			
+LEAVES						VEGETATION			LEAVES		    	FOLIAGE			-						-						0.7		0.1		350.0	0.74 	-0.15  	0.009  	0.99		0.95	0.0 	1.0				0 0 0 0			0 0		LEAVES			
+WOODCHIPS					VEGETATION			TREE_BARK	    	FOLIAGE			-						-						0.7		0.1		1820.0	0.85 	-0.06  	0.040  	0.98		0.95	0.0 	1.0				0 0 0 0			0 0		WOODCHIPS		
+TREE_BARK					VEGETATION			TREE_BARK	    	FOLIAGE			-						-						0.7		0.3		840.0	0.85 	-0.05  	0.00  	0.98		0.95	0.0 	1.0				0 0 0 0			0 0		TREE_BARK		
+																			  												
+																			  												
+###############################																  													
+# METALS (055-068)												  												
+																			  												
+METAL_SOLID_SMALL			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		24500.0	0.90 	-0.12  	0.003 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_SOLID_SMALL		
+METAL_SOLID_MEDIUM			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		28000.0	0.90 	-0.12  	0.003 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_SOLID_MEDIUM		
+METAL_SOLID_LARGE			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		31500.0	0.90 	-0.12  	0.003 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_SOLID_LARGE		
+METAL_HOLLOW_SMALL			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		1750.0	0.94 	-0.11  	0.025  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_HOLLOW_SMALL		
+METAL_HOLLOW_MEDIUM			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2100.0	0.94 	-0.11  	0.025 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_HOLLOW_MEDIUM		
+METAL_HOLLOW_LARGE			METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2450.0	0.94 	-0.11  	0.025 	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_HOLLOW_LARGE		
+METAL_CHAINLINK_SMALL		METALS				METAL		    	DEFAULT			-						-						0.7		0.2		3500.0	0.92 	-0.09  	0.030 	1.000		0.95	0.0 	0.0				1 1 0 1			0 1		METAL_CHAINLINK_SMALL		
+METAL_CHAINLINK_LARGE		METALS				METAL		    	DEFAULT			-						-						0.7		0.2		3850.0	0.91 	-0.09  	0.030 	1.000		0.95	0.0 	0.0				1 1 0 1			0 1		METAL_CHAINLINK_LARGE		
+METAL_CORRUGATED_IRON		METALS				METAL		    	DEFAULT			-						-						0.7		0.4		21000.0	1.00 	-0.12  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_CORRUGATED_IRON		
+METAL_GRILLE				METALS				METAL		    	DEFAULT			METAL_GRILLE			-						0.7		0.3		3500.0	1.00 	-0.12  	0.00  	1.0			0.95	0.0 	1.0				1 1 1 1			0 1		METAL_GRILLE			
+METAL_RAILING				METALS				METAL		    	DEFAULT			-						-						0.7		0.6		4200.0	1.00 	-0.12  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_RAILING			
+METAL_DUCT					METALS				METAL		    	DEFAULT			-						-						0.5		0.4		1750.0	1.00 	-0.12  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_DUCT			
+METAL_GARAGE_DOOR			METALS				METAL		    	DEFAULT			-						-						0.5		0.4		31500.0	1.00 	-0.12  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_GARAGE_DOOR		
+METAL_MANHOLE				METALS				METAL		    	DEFAULT			METAL_MANHOLE			-						0.4		0.6		31500.0	0.90 	-0.12  	0.045  	0.9985		0.95	0.0 	1.0				0 0 0 0			0 1		METAL_MANHOLE			
+																			  												
+																			  												
+###############################																  													
+# WOODS	(069-080)													  												
+																			  												
+WOOD_SOLID_SMALL			WOODS				WOOD		    	DEFAULT			-						-						0.6		0.5		1400.0	0.87 	-0.12  	0.010  	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_SOLID_SMALL			
+WOOD_SOLID_MEDIUM			WOODS				WOOD		    	DEFAULT			-						-						0.6		0.5		2100.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_SOLID_MEDIUM			
+WOOD_SOLID_LARGE			WOODS				WOOD		    	DEFAULT			-						-						0.6		0.5		2852.5	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_SOLID_LARGE			
+WOOD_SOLID_POLISHED			WOODS				WOOD		    	DEFAULT			-						-						0.4		0.6		2800.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_SOLID_POLISHED			
+WOOD_FLOOR_DUSTY			WOODS				WOOD_DUSTY	    	DEFAULT			-						-						0.5		0.5		2100.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_SOLID_DUSTY		
+WOOD_HOLLOW_SMALL			WOODS				WOOD_SPLINTER	    DEFAULT			-						-						0.6		0.4		350.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_HOLLOW_SMALL			
+WOOD_HOLLOW_MEDIUM			WOODS				WOOD_SPLINTER	    DEFAULT			-						-						0.6		0.4		700.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_HOLLOW_MEDIUM			
+WOOD_HOLLOW_LARGE			WOODS				WOOD_SPLINTER	    DEFAULT			-						-						0.6		0.4		1050.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_HOLLOW_LARGE			
+WOOD_CHIPBOARD				WOODS				WOOD_SPLINTER	    DEFAULT			-						-						0.7		0.4		595.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_CHIPBOARD				
+WOOD_OLD_CREAKY				WOODS				WOOD		    	DEFAULT			-						-						0.7		0.4		2100.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_OLD_CREAKY				
+WOOD_HIGH_DENSITY			WOODS				WOOD		    	DEFAULT			-						-						0.7		0.6		21000.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_HIGH_DENSITY			
+WOOD_LATTICE				WOODS				WOOD		    	DEFAULT			-						-						0.6		0.5		1400.0	0.87 	-0.12  	0.010 	0.9999		0.95	0.0 	1.0				1 1 1 1			0 1		WOOD_LATTICE			
+																				  												
+																			  												
+###############################																  													
+# MANMADE (081-111)														  												
+																			  												
+CERAMIC						MANMADE				CERAMIC				DEFAULT			-						-						0.4		0.6		9695.0	0.90 	-0.10  0.00	  1.0			0.95	0.0		1.0				0 0 0 0			0 1		CERAMIC			
+ROOF_TILE					MANMADE				CERAMIC				DEFAULT			-						-						1.0		0.5		7000.0	0.90 	-0.10  0.00	  1.0			0.95	0.0		1.0				0 0 0 0			0 1		ROOF_TILE			
+ROOF_FELT					MANMADE				WOOD_DUSTY		    DEFAULT			-						-						1.0		0.3		5250.0	0.80 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		ROOF_FELT			
+FIBREGLASS 					MANMADE				PLASTIC		    	DEFAULT			-						-						0.7		0.1		1750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		FIBREGLASS 			
+TARPAULIN					MANMADE				PLASTIC		    	DEFAULT			-						-						0.6		0.1		2800.0	0.80 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 1 1 0			0 0		TARPAULIN			
+PLASTIC						MANMADE				PLASTIC		    	DEFAULT			-						-		    			0.6		0.4		3500.0	0.80 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC				
+PLASTIC_HOLLOW				MANMADE				PLASTIC_HOLLOW	    DEFAULT			-						-						0.6		0.3		875.0	0.85 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC_HOLLOW			
+PLASTIC_HIGH_DENSITY		MANMADE				PLASTIC				DEFAULT			-						-						0.6		0.1		21000.0	0.80 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC_HIGH_DENSITY			
+PLASTIC_CLEAR				MANMADE				PLASTIC		    	DEFAULT			-						-		    			0.6		0.4		3500.0	0.80 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC_CLEAR				
+PLASTIC_HOLLOW_CLEAR		MANMADE				PLASTIC_HOLLOW	    DEFAULT			-						-						0.6		0.3		875.0	0.85 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC_HOLLOW_CLEAR			
+PLASTIC_HIGH_DENSITY_CLEAR	MANMADE				PLASTIC				DEFAULT			-						-						0.6		0.1		21000.0	0.80 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTIC_HIGH_DENSITY_CLEAR			
+FIBREGLASS_HOLLOW			MANMADE				PLASTIC_HOLLOW	    DEFAULT			-						-						0.7		0.1		126.0	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		FIBREGLASS_HOLLOW		
+RUBBER						MANMADE				RUBBER		    	DEFAULT			WHEEL_RUBBER			-						2.0		3.0		4200.0	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		RUBBER				
+RUBBER_HOLLOW				MANMADE				RUBBER		    	DEFAULT			-						-						6.0		1.5		875.0	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		RUBBER_HOLLOW		
+LINOLEUM 					MANMADE				LINOLEUM 	    	DEFAULT			-						-						0.9		0.7		1925.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		LINOLEUM 			
+LAMINATE 					MANMADE				WOOD_SPLINTER 	    DEFAULT			-						-						0.5		0.7		2800.0	0.87 	-0.12  0.010  1.000			0.95	0.0 	1.0				0 0 0 0			0 1		LAMINATE 			
+CARPET_SOLID				MANMADE				CARPET_FABRIC	    DEFAULT			-						-						1.5		0.1		1050.0	0.80 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			1 0		CARPET_SOLID			
+CARPET_SOLID_DUSTY			MANMADE				CARPET_FABRIC_DUSTY DEFAULT			-						-						1.5		0.1		1050.0	0.80 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			1 0		CARPET_SOLID_DUSTY			
+CARPET_FLOORBOARD			MANMADE				CARPET_FABRIC	    DEFAULT			-						-						0.9		0.2		1750.0	0.80 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			1 0		CARPET_FLOORBOARD		
+CLOTH 						MANMADE				CARPET_FABRIC	    DEFAULT			-						-						0.5		0.1		875.0	0.80 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			1 0		CLOTH 				
+PLASTER_SOLID				MANMADE				CONCRETE			DEFAULT			-						-						0.8		0.6		2971.5	0.80 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTER_SOLID			
+PLASTER_BRITTLE				MANMADE				PLASTER_BRITTLE	    DEFAULT			-						-						0.8		0.1		2971.5	0.80 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		PLASTER_BRITTLE			
+CARDBOARD_SHEET				MANMADE				CARDBOARD	    	DEFAULT			-						-						0.5		0.2		400.0	0.80 	-0.10  0.00	  1.0			0.95	0.0 	0.0				0 1 1 0			0 0		CARDBOARD_SHEET			
+CARDBOARD_BOX				MANMADE				CARDBOARD	    	DEFAULT			-						-						1.2		0.2		200.0	0.85 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CARDBOARD_BOX			
+PAPER 						MANMADE				PAPER		    	DEFAULT			-						-						1.2		0.2		4203.5	0.80 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PAPER 				
+FOAM						MANMADE				FOAM	    	    DEFAULT			-						-						1.0		0.1		175.0	0.80 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			1 0		FOAM				
+FEATHER_PILLOW	 			MANMADE				FEATHERS     	    DEFAULT			-						-						0.5		0.1		192.5	0.80 	-0.10  0.00	  1.0			0.95	0.0 	0.0				0 1 1 0			1 0		FEATHER_PILLOW	 		
+POLYSTYRENE					MANMADE				PLASTIC				DEFAULT			-						-						1.0		0.2		157.5	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		POLYSTYRENE			
+LEATHER						MANMADE				CARPET_FABRIC	    DEFAULT			-						-						1.0		0.2		3307.5	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		LEATHER				
+TVSCREEN					MANMADE				TVSCREEN	    	DEFAULT			-						-						0.4		0.6		9026.5	0.90 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TVSCREEN			
+SLATTED_BLINDS				MANMADE				PLASTIC		    	DEFAULT			-						- 						0.4		0.3		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 1 1 		0 0		SLATTED_BLINDS
+																			  													
+																		  												
+###############################																  													
+# GLASS	(112-115)
+
+GLASS_SHOOT_THROUGH			GLASS		    	GLASS		    	DEFAULT			-						-						0.2		0.7		8750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	0.0				1 1 1 0			0 0		GLASS_SHOOT_THROUGH	
+GLASS_BULLETPROOF			GLASS		    	GLASS_BULLETPROOF   DEFAULT			-						-						0.2		0.7		8750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	10000.0			1 0 0 0			0 0		GLASS_BULLETPROOF
+GLASS_OPAQUE				GLASS		    	GLASS		    	DEFAULT			-						-						0.2		0.7		8750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		GLASS_OPAQUE
+																						  																			
+PERSPEX						GLASS		    	GLASS		    	DEFAULT			-						-						0.2		0.7		4130.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PERSPEX		
+																			  												
+																			  												
+###############################																  													
+# VEHICLES (116-124)															  													
+																			  												
+CAR_METAL					VEHICLES			CAR_METAL	    	DEFAULT			WHEEL_RIM				-						0.4		0.1		3363.5	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CAR_METAL		
+CAR_PLASTIC					VEHICLES			CAR_PLASTIC	    	DEFAULT			-						-						0.6		0.1		1750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CAR_PLASTIC		
+CAR_SOFTTOP					VEHICLES			CARPET_FABRIC	    DEFAULT			-						-						0.6		0.1		1750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 1 1 0			0 0		CAR_SOFTTOP		
+CAR_SOFTTOP_CLEAR			VEHICLES			CARPET_FABRIC    	DEFAULT			-						-						0.6		0.1		1750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 1 1 0			0 0		CAR_SOFTTOP_CLEAR	
+																						  																			
+CAR_GLASS_WEAK				VEHICLES			CAR_GLASS	    	DEFAULT			-						-						0.2		0.1		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 1 0			0 0		CAR_GLASS_WEAK		
+CAR_GLASS_MEDIUM			VEHICLES			CAR_GLASS	    	DEFAULT			-						-						0.2		0.2		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 1 0			0 0		CAR_GLASS_MEDIUM	
+CAR_GLASS_STRONG			VEHICLES			CAR_GLASS	    	DEFAULT			-						-						0.2		0.3		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 1 0			0 0		CAR_GLASS_STRONG		
+CAR_GLASS_BULLETPROOF		VEHICLES			CAR_GLASS	    	DEFAULT			-						-						0.2		0.3		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	10000.0			1 0 0 0			0 0		CAR_GLASS_BULLETPROOF
+CAR_GLASS_OPAQUE			VEHICLES			CAR_GLASS	    	DEFAULT			-						-						0.2		0.3		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CAR_GLASS_OPAQUE
+																			  												
+																			  																																			
+###############################																  													
+# LIQUIDS (125-128)													  												
+																			  												
+WATER						LIQUIDS				LIQUID_WATER	    DEFAULT			-						-						0.5		0.1		3573.5	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				1 1 1 1			0 0		WATER				
+BLOOD						LIQUIDS				LIQUID_BLOOD	    DEFAULT			-						-						0.5		0.1		3573.5	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 1			0 0		BLOOD			
+OIL							LIQUIDS				LIQUID_OIL			DEFAULT			-						-						0.5		0.1		3573.5	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 1			0 0		OIL				
+PETROL						LIQUIDS				LIQUID_PETROL	    DEFAULT			-						-						0.5		0.1		3573.5	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 1			0 0		PETROL				
+			                                	                                	                		            			    	    	             	                   		     
+																					  																			
+###############################																				  																					
+# MISC (129-130)																	  																		
+                                            	                                	                		            			    	    	             	                   		                 
+FRESH_MEAT					MISC				FRESH_MEAT	    	DEFAULT			-						-						2.0		3.0		4200.0	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		FRESH_MEAT
+DRIED_MEAT					MISC				DRIED_MEAT	    	DEFAULT			-						-						2.0		3.0		4200.0	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		DRIED_MEAT
+			                                	                	            	                		            			    	    	             	                   		         
+																						  																				
+###############################																					  																					
+# PROJTEX (131-132)																	  																			
+																						  																			
+EMISSIVE_GLASS				SPECIAL				GLASS		    	DEFAULT			-						-						0.2		0.6		8750.0	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				1 0 0 0			0 0		EMISSIVE_GLASS			
+EMISSIVE_PLASTIC			SPECIAL				PLASTIC		    	DEFAULT			-						-						0.5		0.5		3500.0	0.80 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		EMISSIVE_PLASTIC				
+
+
+###############################																					  																					
+# VFX SPECIFIC (PARTICLES) (133-134)																		  																					
+
+VFX_METAL_ELECTRIFIED		METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2100.0	1.00 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		VFX_METAL_ELECTRIFIED	
+VFX_METAL_WATER_TOWER		METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2100.0	1.00 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		VFX_METAL_WATER_TOWER	
+	
+
+###############################																					  																			
+# VFX SPECIFIC (EXPLOSIONS)	(135-136)																  																			
+
+VFX_METAL_STEAM				METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2100.0	1.00	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		VFX_METAL_STEAM		
+VFX_METAL_FLAME				METALS				METAL		    	DEFAULT			-						-						0.5		0.6		2100.0	1.00	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		VFX_METAL_FLAME		
+																						  													
+																			  												
+###############################																  													
+# PHYSICS (137-149)												  												
+																			  												
+# USE FOR BOWLING LANES SO THE SCRIPT HAS TOTAL CONTROL OVER THE BOWLING BALL MOVEMENT									  															
+PHYS_NO_FRICTION			SPECIAL				VOID				DEFAULT			-						-						0.0 	0.1		1750.0	0.80 	-0.20  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_NO_FRICTION			
+																			  																
+# USED FOR BALL IN THE GOLF MINI-GAME SO THAT IT CAN BE TWEAKED WITHOUT AFFECTING OTHER OBJECTS IN THE WORLD										  															
+PHYS_GOLF_BALL				SPECIAL				VOID				DEFAULT			-						-						0.1 	0.9		577.5	0.80 	-0.20  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_GOLF_BALL			
+																			  																
+# USED FOR BALL IN THE TENNIS MINI-GAME SO THAT IT CAN BE TWEAKED WITHOUT AFFECTING OTHER OBJECTS IN THE WORLD										  															
+PHYS_TENNIS_BALL			SPECIAL				VOID				DEFAULT			-						-						1.0 	10.0	350.0	1.00 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_TENNIS_BALL		
+																			  																
+# USED FOR CASTERS ON TROLLEYS TO MAKE IT SLIDE AROUND THE FLOOR											  																		
+PHYS_CASTER					SPECIAL				VOID				DEFAULT			-						-						0.1 	0.1		1750.0	0.50 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_CASTER		
+
+# USED FOR CASTERS ON TROLLEYS TO MAKE IT SLIDE AROUND THE FLOOR - HIGHER FRICTION VERSION											  																		
+PHYS_CASTER_RUSTY			SPECIAL				VOID				DEFAULT			-						-						0.3 	0.1		1750.0	0.50 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_CASTER		
+																			  												
+# USED ON VEHICLES OVER AREA WHERE A DOOR OR WINDOW CAN FALL OFF - IT KEEPS THE CONVEX HULL REQUIREMENTS FOR THE COLLISION					  																	
+PHYS_CAR_VOID				SPECIAL				VOID				DEFAULT			-						-						0.4 	0.1		1750.0	1.00 	-0.20  0.00	  1.0			0.95	0.0 	0.0				1 1 0 0			0 0		PHYS_CAR_VOID			
+																			  																
+# SET ONLY IN CODE FOR THE MAIN NON RAGDOLL PED CAPSULE													  																			
+PHYS_PED_CAPSULE			SPECIAL				PED_CAPSULE			DEFAULT			-						-						0.0 	0.1		1750.0	0.70 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_PED_CAPSULE				
+																			  																
+# MATERIALS THAT THE PHYSICS NEEDS CAUSE A REACTION TO													  														
+PHYS_ELECTRIC_FENCE			SPECIAL				VOID				DEFAULT			-						WEAPON_ELECTRIC_FENCE	0.0 	0.1		1750.0	0.70 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 0 0			0 0		PHYS_ELECTRIC_FENCE
+PHYS_ELECTRIC_METAL			SPECIAL				VOID				DEFAULT			-						WEAPON_ELECTRIC_FENCE	0.0 	0.1		1750.0	0.70 	 0.00  0.00	  1.0			0.95	0.0 	0.0				0 0 0 0			0 0		PHYS_ELECTRIC_METAL
+PHYS_BARBED_WIRE			SPECIAL				VOID				DEFAULT			-						WEAPON_BARBED_WIRE		0.0 	0.1		1750.0	0.70 	 0.00  0.00	  1.0			0.95	0.0 	0.0				1 1 0 0			0 0		PHYS_BARBED_WIRE
+																			  													
+# MATERIALS FOR THE BILLIARDS MINI GAME																  														
+PHYS_POOLTABLE_SURFACE		SPECIAL				WOOD			    DEFAULT			-						-						0.2 	1.0		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		POOLTABLE_SURFACE		
+PHYS_POOLTABLE_CUSHION		SPECIAL				WOOD				DEFAULT			-						-						0.1 	1.0		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		POOLTABLE_CUSHION		
+PHYS_POOLTABLE_BALL			SPECIAL				PLASTIC				DEFAULT			-						-						2.5 	0.4		8750.0	0.90 	 0.00  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		POOLTABLE_BALL			
+																			  												
+###############################																  													
+# NATURAL MOTION (150-171)														  													
+																			  												
+BUTTOCKS					NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		BUTTOCKS			
+THIGH_LEFT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		THIGH_LEFT				
+SHIN_LEFT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SHIN_LEFT		
+FOOT_LEFT					NATURAL_MOTION		PED_FOOT	    	DEFAULT			-						-						2.25	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		FOOT_LEFT		
+THIGH_RIGHT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		THIGH_RIGHT		
+SHIN_RIGHT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SHIN_RIGHT		
+FOOT_RIGHT					NATURAL_MOTION		PED_FOOT	    	DEFAULT			-						-						2.25	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		FOOT_RIGHT		
+SPINE0						NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SPINE0			
+SPINE1						NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SPINE1			
+SPINE2						NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SPINE2			
+SPINE3						NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		SPINE3					
+CLAVICLE_LEFT				NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CLAVICLE_LEFT		
+UPPER_ARM_LEFT				NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		UPPER_ARM_LEFT		
+LOWER_ARM_LEFT				NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		LOWER_ARM_LEFT		
+HAND_LEFT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						2.25	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		HAND_LEFT		
+CLAVICLE_RIGHT				NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CLAVICLE_RIGHT		
+UPPER_ARM_RIGHT				NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		UPPER_ARM_RIGHT		
+LOWER_ARM_RIGHT				NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		LOWER_ARM_RIGHT		
+HAND_RIGHT					NATURAL_MOTION		PED_LIMB	    	DEFAULT			-						-						2.25	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		HAND_RIGHT		
+NECK						NATURAL_MOTION		PED_HEAD	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		NECK			
+HEAD						NATURAL_MOTION		PED_HEAD	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		HEAD
+
+ANIMAL_DEFAULT				NATURAL_MOTION		PED_TORSO	    	DEFAULT			-						-						0.75	 0.0	350.0	0.70  	0.00  0.00	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		ANIMAL_DEFAULT									
+		
+																			  												
+###############################	
+# NEW MATERIALS (172-176)
+CAR_ENGINE					VEHICLES			CAR_METAL	    	DEFAULT			BIG_ENGINE				-						0.4		0.1		3363.5	0.90 	-0.12  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		CAR_ENGINE	
+PUDDLE						LIQUIDS				PUDDLE				DEFAULT			-						-						0.5		0.1		3573.5	0.90 	-0.10  0.00	  1.0			0.95	0.0 	1.0				0 0 0 1			0 0		PUDDLE				
+CONCRETE_PAVEMENT			HARD_TERRAIN		CONCRETE	   		DEFAULT			-						-						1.0		0.5		7850.5	1.00 	-0.10  	0.0	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		CONCRETE_PAVEMENT
+BRICK_PAVEMENT				HARD_TERRAIN		BRICK		    	DEFAULT			-						-						0.8		0.4		7000.0	1.00 	-0.15	0.0	  1.0			0.95	0.0		1.0				0 0 0 0			0 1		BRICK_PAVEMENT
+# SPECIAL MATERIAL USED TO IDENTIFY FRAG BOUNDS USED ONLY FOR COVER SHAPE TESTS AND DISABLED WHEN THE FRAG BREAKS
+PHYS_DYNAMIC_COVER_BOUND	SPECIAL				VOID				DEFAULT			-						-						0.0 	0.1		1750.0	0.80 	-0.20  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 0		PHYS_DYNAMIC_COVER_BOUND
+VFX_WOOD_BEER_BARREL		WOODS				WOOD		    	DIRT			-						-						0.6		0.5		1400.0	0.80 	-0.15  0.00   1.0			0.95	0.0 	1.0				0 0 0 0			0 1		VFX_WOOD_BEER_BARREL	
+WOOD_HIGH_FRICTION			WOODS				WOOD		    	DIRT			-						-						2.5		0.5		1400.0	0.80 	-0.15  0.00	  1.0			0.95	0.0 	1.0				0 0 0 0			0 1		WOOD_HIGH_FRICTION			
+# SPECIAL VERSIONS OF THESE MATERIAL THAT WONT HAVE PLANT INSTANCE PLACEMENT ON THEM - IDEALLY THESE NEED REPLACED WITH A MATERIAL FLAG GOING FORWARD
+ROCK_NOINST					HARD_TERRAIN		STONE		    	DIRT			ROCK					-						0.9		0.4		7000.0	1.00 	-0.15	0.0		0.8			0.95	0.0		1.0				0 0 0 0			0 1		ROCK_NOINST			
+BUSHES_NOINST				VEGETATION			BUSHES		    	FOLIAGE			-						-						0.7		0.1		525.0	0.75 	-0.15  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 0		BUSHES_NOINST			
+METAL_SOLID_ROAD_SURFACE	METALS				METAL		    	DEFAULT			-						-						0.5		0.6		28000.0	1.00 	-0.15  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		METAL_SOLID_ROAD_SURFACE		
+STUNT_RAMP_SURFACE			METALS				METAL		    	DEFAULT			-						-						1.0		0.6		28000.0	1.0 	-0.15  	0.00  	1.0			0.95	0.0 	1.0				0 0 0 0			0 1		STUNT_ROAD_SURFACE		
+
+																			  												
+###############################																  													
+# TEMP MATERIALS SO THE OLD MATERIAL INDICES AREN'T OUT OF RANGE											  													
+																			  												
+TEMP_01						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_01
+TEMP_02						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_02
+TEMP_03						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_03
+TEMP_04						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_04
+TEMP_05						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_05
+TEMP_06						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_06
+TEMP_07						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_07
+TEMP_08						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_08
+TEMP_09						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_09
+TEMP_10						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_10
+TEMP_11						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_11
+TEMP_12						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_12
+TEMP_13						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_13
+TEMP_14						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_14
+TEMP_15						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_15
+TEMP_16						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_16
+TEMP_17						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_17
+TEMP_18						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_18
+TEMP_19						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_19
+TEMP_20						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_20
+TEMP_21						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_21
+TEMP_22						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_22
+TEMP_23						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_23
+TEMP_24						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_24
+TEMP_25						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_25
+TEMP_26						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_26
+TEMP_27						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_27
+TEMP_28						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_28
+TEMP_29						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_29
+TEMP_30						SPECIAL				VOID		    	DEFAULT			-						-						0.7 	0.1		5950.0	0.75	0.25  0.0	 1.0			0.95	0.0 	1.0				0 0 0 0			0 0		TEMP_30
+
+
+
+
+
