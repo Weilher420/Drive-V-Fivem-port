@@ -2927,9 +2927,9 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="1" />
-      <swankness>SWANKNESS_5</swankness>
-      <maxNum value="2" />
+      <frequency value="10" />
+      <swankness>SWANKNESS_4</swankness>
+      <maxNum value="5" />
       <flags>FLAG_EXTRAS_STRONG FLAG_HAS_INTERIOR_EXTRAS FLAG_CAN_HAVE_NEONS FLAG_HAS_SUPERCHARGER</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
@@ -3594,7 +3594,7 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.844" />
-      <identicalModelSpawnDistance value="800" />
+      <identicalModelSpawnDistance value="80" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
@@ -3811,7 +3811,7 @@
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
       <frequency value="5" />
-      <swankness>SWANKNESS_5</swankness>
+      <swankness>SWANKNESS_4</swankness>
       <maxNum value="2" />
       <flags>FLAG_EXTRAS_STRONG FLAG_HAS_INTERIOR_EXTRAS FLAG_CAN_HAVE_NEONS FLAG_HAS_SUPERCHARGER</flags>
       <type>VEHICLE_TYPE_CAR</type>

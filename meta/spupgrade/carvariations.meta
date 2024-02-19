@@ -1836,8 +1836,8 @@
       <colors>
         <Item>
           <indices content="char_array">
-            28
-            0 
+            39
+            12
             0
             106 
           </indices>
@@ -1854,9 +1854,9 @@
         </Item>
         <Item>
           <indices content="char_array">
-            0 
-            0 
-            7
+            12
+            12
+            0
             156 
           </indices>
           <liveries>
@@ -1872,8 +1872,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            7
-            7
+            26
+            26
             111 
             156 
           </indices>
@@ -1890,8 +1890,8 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            65
-            65
+            87
+            87
             67
             106 
           </indices>
@@ -1908,9 +1908,9 @@
         </Item>
         <Item>
           <indices content="char_array">
-            7 
-            0 
-            111 
+            26
+            12
+            156 
             156 
           </indices>
           <liveries>
@@ -1926,8 +1926,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            72 
-            72 
+            82 
+            82 
             73 
             156 
           </indices>
@@ -1944,8 +1944,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            111 
-            0
+            131 
+            12
             0
             156 
           </indices>
@@ -1962,9 +1962,9 @@
         </Item>
         <Item>
           <indices content="char_array">
-            93 
-            95
-            93 
+            113 
+            113
+            107
             156 
           </indices>
           <liveries>
@@ -1980,8 +1980,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            99
-            99
+            116
+            116
             106 
             156 
           </indices>
@@ -1998,8 +1998,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            104
-            104
+            40
+            40
             41
             156 
           </indices>
@@ -2016,8 +2016,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            100
-            95
+            155
+            155
             0 
             156 
           </indices>
@@ -2034,9 +2034,9 @@
         </Item>
         <Item>
           <indices content="char_array">
-            50 
-            95
-            156
+            58
+            58
+            59
             156 
           </indices>
           <liveries>
@@ -2052,8 +2052,8 @@
         </Item>
         <Item>
           <indices content="char_array">
-            52
-            52 
+            59
+            59 
             60 
             156 
           </indices>

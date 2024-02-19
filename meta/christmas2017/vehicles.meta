@@ -176,7 +176,7 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="1" />
+      <frequency value="4" />
       <swankness>SWANKNESS_5</swankness>
       <maxNum value="5" />
       <flags>FLAG_SPORTS FLAG_RICH_CAR FLAG_NO_BROKEN_DOWN_SCENARIO FLAG_CAN_HAVE_NEONS FLAG_RECESSED_HEADLIGHT_CORONAS FLAG_EXTRAS_REQUIRE FLAG_EXTRAS_STRONG FLAG_FRONT_BOOT FLAG_USE_AIRCRAFT_STYLE_WEAPON_TARGETING</flags>
@@ -909,7 +909,7 @@
         500.000000	
         500.000000
       </lodDistances>
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="99" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
@@ -918,7 +918,7 @@
       <weaponForceMult value="1.000000" />
       <frequency value="1" />
       <swankness>SWANKNESS_5</swankness>
-      <maxNum value="2" />
+      <maxNum value="1" />
       <flags>FLAG_SPORTS FLAG_NO_BROKEN_DOWN_SCENARIO FLAG_RECESSED_TAILLIGHT_CORONAS FLAG_COUNT_AS_FACEBOOK_DRIVEN</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_BACK_PLATES</plateType>
@@ -2543,7 +2543,7 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.788" />
-      <identicalModelSpawnDistance value="900" />
+      <identicalModelSpawnDistance value="90" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />

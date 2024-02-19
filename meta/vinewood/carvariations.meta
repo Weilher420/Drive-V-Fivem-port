@@ -1932,7 +1932,7 @@
           <indices content="char_array">
             62 
             62 
-            127 
+            80
             62 
 			13
             111
@@ -2573,29 +2573,9 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            62	
-            62
+            64	
+            64
             0
-            156 
-			160
-			160
-          </indices>
-          <liveries>
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-          </liveries>
-        </Item>
-		<Item>
-          <indices content="char_array">
-            74	
-            74
-            74
             156 
 			160
 			160
@@ -2615,7 +2595,7 @@
           <indices content="char_array">
             34	
             34
-            34
+            0
             156 
 			160
 			160
@@ -2633,8 +2613,8 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            49	
-            49
+            50	
+            50
             0
             156 
 			160
@@ -2655,7 +2635,7 @@
           <indices content="char_array">
             94	
             94
-            111
+            0
             156 
 			160
 			160
@@ -2673,8 +2653,8 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            88	
-            88
+            54	
+            54
             0
             156 
 			160
@@ -2753,9 +2733,9 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            143	
-            143
-            143
+            0
+            0
+            0
             156 
 			160
 			160
@@ -2773,9 +2753,9 @@
         </Item>
 		<Item>
           <indices content="char_array">
-            2	
-            2
-            111
+            65
+            65
+            0
             156 
 			160
 			160
@@ -2796,6 +2776,46 @@
             37	
             37
             111
+            156 
+			160
+			160
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+		<Item>
+          <indices content="char_array">
+            125
+            125
+            0
+            156 
+			160
+			160
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+		<Item>
+          <indices content="char_array">
+            139
+            139
+            0
             156 
 			160
 			160

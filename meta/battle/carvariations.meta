@@ -67,26 +67,6 @@
         </Item>
         <Item>
           <indices content="char_array">
-            2
-            2
-            2
-            159 
-			8
-			156
-          </indices>
-          <liveries>
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-            <Item value="false" />
-          </liveries>
-        </Item>
-        <Item>
-          <indices content="char_array">
             52
             52
             0

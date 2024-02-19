@@ -799,14 +799,14 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.844" />
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="99" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="1" />
+      <frequency value="15" />
       <swankness>SWANKNESS_5</swankness>
       <maxNum value="4" />
       <flags>FLAG_EXTRAS_STRONG FLAG_HAS_INTERIOR_EXTRAS FLAG_CAN_HAVE_NEONS FLAG_HAS_SUPERCHARGER</flags>
@@ -1980,9 +1980,9 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="6" />
+      <frequency value="1" />
       <swankness>SWANKNESS_4</swankness>
-      <maxNum value="8" />
+      <maxNum value="15" />
       <flags>FLAG_SPORTS FLAG_CAN_HAVE_NEONS FLAG_PARKING_SENSORS FLAG_HAS_INTERIOR_EXTRAS</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_BACK_PLATES</plateType>

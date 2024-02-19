@@ -757,7 +757,7 @@
       <frequency value="1" />
       <swankness>SWANKNESS_5</swankness>
       <maxNum value="1" />
-      <flags>FLAG_SPORTS FLAG_CAN_HAVE_NEONS FLAG_EXTRAS_STRONG FLAG_RECESSED_HEADLIGHT_CORONAS FLAG_EXTRAS_REQUIRE FLAG_FRONT_BOOT</flags>
+      <flags>FLAG_CAN_HAVE_NEONS FLAG_EXTRAS_STRONG FLAG_RECESSED_HEADLIGHT_CORONAS FLAG_EXTRAS_REQUIRE FLAG_FRONT_BOOT</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
 	  <dashboardType>VDT_DUKES</dashboardType>

@@ -72,7 +72,7 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="35" />
+      <frequency value="30" />
       <swankness>SWANKNESS_3</swankness>
       <maxNum value="10" />
       <flags>FLAG_EXTRAS_STRONG FLAG_AVERAGE_CAR FLAG_HAS_INTERIOR_EXTRAS FLAG_CAN_HAVE_NEONS FLAG_HAS_SUPERCHARGER</flags>
@@ -394,15 +394,15 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="35" />
+      <frequency value="15" />
       <swankness>SWANKNESS_2</swankness>
-      <maxNum value="10" />
+      <maxNum value="5" />
       <flags>FLAG_EXTRAS_STRONG FLAG_AVERAGE_CAR FLAG_HAS_INTERIOR_EXTRAS FLAG_CAN_HAVE_NEONS FLAG_HAS_SUPERCHARGER</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_BACK_PLATES</plateType>
       <dashboardType>VDT_DUKES</dashboardType>
       <vehicleClass>VC_MUSCLE</vehicleClass>
-      <wheelType>VWT_MUSCLE</wheelType>
+      <wheelType>VWT_LOWRIDER</wheelType>
       <trailers />
       <additionalTrailers />
       <drivers />
@@ -1150,10 +1150,10 @@
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="20" />
+      <frequency value="5" />
       <swankness>SWANKNESS_4</swankness>
       <maxNum value="5" />
-      <flags>FLAG_POOR_CAR FLAG_HAS_LOWRIDER_HYDRAULICS</flags>
+      <flags>FLAG_RICH_CAR FLAG_HAS_LOWRIDER_HYDRAULICS</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
       <dashboardType>VDT_PEYOTE</dashboardType>

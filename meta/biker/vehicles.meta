@@ -841,7 +841,7 @@
         750.000000
       </lodDistances>
       <minSeatHeight value="0.946" />
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="200" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />

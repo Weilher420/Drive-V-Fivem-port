@@ -1,5 +1,8 @@
 fx_version "cerulean"
 game "gta5"
+author 'PermissionToLand'
+description 'DriveV'
+version '7.0'
 
 files {
 	"meta/**/*.meta",

@@ -81,7 +81,7 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.988" />
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="900" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
@@ -90,7 +90,7 @@
       <weaponForceMult value="1.000000" />
       <frequency value="1" />
       <swankness>SWANKNESS_5</swankness>
-      <maxNum value="2" />
+      <maxNum value="20" />
       <flags>FLAG_NO_BROKEN_DOWN_SCENARIO FLAG_CAN_HAVE_NEONS FLAG_HAS_TWO_BONNET_BONES</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_BACK_PLATES</plateType>
@@ -1462,14 +1462,14 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.422" />
-      <identicalModelSpawnDistance value="400" />
+      <identicalModelSpawnDistance value="999" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="5" />
+      <frequency value="1" />
       <swankness>SWANKNESS_5</swankness>
       <maxNum value="2" />
       <flags>FLAG_SPORTS FLAG_RICH_CAR FLAG_NO_BROKEN_DOWN_SCENARIO FLAG_RECESSED_TAILLIGHT_CORONAS FLAG_COUNT_AS_FACEBOOK_DRIVEN FLAG_NO_HEAVY_BRAKE_ANIMATION</flags>

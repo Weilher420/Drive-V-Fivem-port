@@ -176,7 +176,7 @@
         500.000000
       </lodDistances>
       <minSeatHeight value="0.844" />
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="99" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
@@ -949,16 +949,16 @@
         500.000000	
         500.000000
       </lodDistances>
-      <identicalModelSpawnDistance value="999" />
+      <identicalModelSpawnDistance value="50" />
       <maxNumOfSameColor value="1" />
       <defaultBodyHealth value="1000.000000" />
       <pretendOccupantsScale value="1.000000" />
       <visibleSpawnDistScale value="1.000000" />
       <trackerPathWidth value="2.000000" />
       <weaponForceMult value="1.000000" />
-      <frequency value="5" />
-      <swankness>SWANKNESS_1</swankness>
-      <maxNum value="5" />
+      <frequency value="1" />
+      <swankness>SWANKNESS_3</swankness>
+      <maxNum value="3" />
       <flags>FLAG_POOR_CAR FLAG_EXTRAS_STRONG FLAG_RECESSED_HEADLIGHT_CORONAS FLAG_HAS_INTERIOR_EXTRAS</flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_BACK_PLATES</plateType>
